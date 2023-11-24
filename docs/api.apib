@@ -1,0 +1,30 @@
+FORMAT: 1A
+HOST: https://weather-api.herokuapp.com
+
+# Weather API documentation
+Weather api documentation
+
+# Group cities
+
+## Cities' weather [/cities/search]
+Endpoint for cities' weather.
+
+### Search [GET /cities/search]
+Endpoint to searach cities' weather.
+
++ Attributes
+    + query (string, required) - City name.
+
++ Request (application/json)
+    + Headers
+            Content-Type: application/json
+
++ Response 200 (application/json)
+    + Attributes
+        + data (array[City], fixed-type) - Cities data.
+
+# Data Structures
+
+# City (object)
++ code (string) - city's code.
++ name: `City name` (string, required) - City's name.

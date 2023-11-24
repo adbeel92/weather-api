@@ -5,20 +5,23 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+1. Requirements
 
-* System dependencies
+  * Ruby 3.2.2
+  * Rails 7.1.2
+  <!--
+  * Node 18.x
+  * Yarn
+  -->
 
-* Configuration
+2. Install Gems
 
-* Database creation
+  ```shell
+  % bundle
+  ```
 
-* Database initialization
+3. * How to run the test suite
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  ```shell
+  % rspec
+  ```

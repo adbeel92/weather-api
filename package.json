@@ -1,0 +1,19 @@
+{
+  "name": "weather-api-docs",
+  "version": "1.0.0",
+  "description": "Weather API docs",
+  "main": "index.js",
+  "author": "Eduardo Arenas",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 14.19.0",
+    "yarn": "1.x"
+  },
+  "dependencies": {
+    "@funboxteam/blueprinter": "^6.0.0"
+  },
+  "scripts": {
+    "build:doc": "blueprinter -i docs/api.apib -o public/index.html",
+    "build": "yarn build:doc"
+  }
+}

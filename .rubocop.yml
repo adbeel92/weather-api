@@ -1,0 +1,23 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 3.2.2
+  NewCops: enable
+  DefaultFormatter: fuubar
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+  SuggestExtensions: false
+
+inherit_mode:
+  merge:
+    - Exclude
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Style/Documentation:
+  Enabled: false
