@@ -1,1 +1,1 @@
-json.content "testing"
+json.content @response

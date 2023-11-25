@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: https://weather-api.herokuapp.com
+HOST: https://cities-weather-api.onrender.com
 
 # Weather API documentation
 Weather api documentation
@@ -16,12 +16,10 @@ Endpoint to searach cities' weather.
     + query (string, required) - City name.
 
 + Request (application/json)
-    + Headers
-            Content-Type: application/json
 
 + Response 200 (application/json)
     + Attributes
-        + data (array[City], fixed-type) - Cities data.
+        + data (array[City]) - Cities data.
 
 # Data Structures
 

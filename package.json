@@ -10,10 +10,10 @@
     "yarn": "1.x"
   },
   "dependencies": {
-    "@funboxteam/blueprinter": "^6.0.0"
+    "aglio": "^2.3.0"
   },
   "scripts": {
-    "build:doc": "blueprinter -i docs/api.apib -o public/index.html",
+    "build:doc": "aglio -i docs/api.apib -o public/docs.html",
     "build": "yarn build:doc"
   }
 }

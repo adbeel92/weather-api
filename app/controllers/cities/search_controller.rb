@@ -3,7 +3,11 @@
 module Cities
   class SearchController < ApplicationController
     def index
-      puts "Test: #{search_params[:query]}"
+      # TODO: move to a service object
+      @response = ExternalApis::OpenWeatherMap::Api.client.onecall(
+        lat: 33.44,
+        lon: -94.04
+      )
     end
 
     private
